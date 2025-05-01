@@ -13,6 +13,6 @@ jobs:
         uses: sunil-kumar-h/shared-go-sync-action@main
         with:
           shared-mod-url: "https://raw.githubusercontent.com/sunil-kumar-h/shared-deps/refs/heads/main/go.mod"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MY_PAT }}
           repo-owner: sunil-kumar-h
           repo-name: ${{ github.event.repository.name }}
