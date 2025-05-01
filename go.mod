@@ -1,4 +1,4 @@
-module github.com/my-org/project-a
+module github.com/sunil-kumar-h/project-a
 
 go 1.21
 
