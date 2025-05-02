@@ -14,6 +14,8 @@ jobs:
           echo "PWD: $(pwd)"
           echo "Files:"
           ls -al
+          echo "GitHub workspace: $GITHUB_WORKSPACE"
+          ls -R $GITHUB_WORKSPACE
       - name: Run Shared Go Dependency Sync
         uses: sunil-kumar-h/shared-go-sync-action@main
         with:
