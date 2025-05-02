@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+
       - name: Debug workspace
         run: |
           echo "PWD: $(pwd)"
@@ -27,4 +27,4 @@ jobs:
           repo-owner: sunil-kumar-h
           repo-name: ${{ github.event.repository.name }}
           folder-path: "go-sample-proj"
-          ignore-file: "${{ github.workspace }}/go-sample-proj/.depignore"
+          ignore-file: "${{ github.workspace }}/.depignore"
