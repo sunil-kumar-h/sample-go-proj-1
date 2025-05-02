@@ -9,6 +9,11 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug workspace
+        run: |
+          echo "PWD: $(pwd)"
+          echo "Files:"
+          ls -al
       - name: Run Shared Go Dependency Sync
         uses: sunil-kumar-h/shared-go-sync-action@main
         with:
