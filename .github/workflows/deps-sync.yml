@@ -17,4 +17,4 @@ jobs:
           repo-owner: sunil-kumar-h
           repo-name: ${{ github.event.repository.name }}
           folder-path: "go-sample-proj"
-          ignore-file: ".depignore"
+          ignore-file: "depignore"
